@@ -1,0 +1,65 @@
+<html lang="ja">
+
+ <head>
+   <meta charset="utf-8">
+   <title>Kofu Fes</title>
+   <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
+   <link rel="stylesheet" href="../static/css/access.css" type="text/css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+   <script type="text/javascript" src="../static/js/index.js"></script>
+
+</head>
+
+<body>
+
+      <div class="menu">
+          <span class="menu__line menu__line--top"></span>
+          <span class="menu__line menu__line--center"></span>
+          <span class="menu__line menu__line--bottom"></span>
+    </div>
+      <nav class="gnav">
+          <div class="gnav__wrap">
+              <ul class="gnav__menu">
+                   <li class="gnav__menu__item"><a href="{{url_for('protected_index')}}">TOP</a></li>
+                  <li class="gnav__menu__item"><a href="{{url_for('protected_mapjhs')}}">Map</a></li>
+                  <li class="gnav__menu__item"><a href="{{url_for('protected_food')}}">Food</a></li>
+                  <li class="gnav__menu__item"><a href="{{url_for('protected_access')}}">Access</a></li>
+                  <li class="gnav__menu__item"><a href="#">Contact</a></li>
+              </ul>
+          </div><!--gnav-wrap-->
+      </nav>
+      <div class="hero"></div>
+
+
+      <div class="titletop">
+      <span>access</span>
+      </div>
+
+
+
+      <h2>how to go</h2>
+      <div class="access">
+        <div class="access-img">
+          <img src="../static/pictures/accessmap.png">
+        </div>
+        <div class="access-text">
+          <h4>number:03-3202-7674</h4>
+          <h4>adress:東京都新宿区馬場下町６２</h4>
+        </div>
+      </div>
+
+      <div class="gmap">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.8092107599514!2d139.71732171460587!3d35.70631233620475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d1cfa45668b%3A0xe291f5e2846af2c1!2z5pep56iy55Sw5Lit5a2m5qCh44O76auY562J5a2m5qCh!5e0!3m2!1sja!2sjp!4v1577423221617!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      </div>
+
+
+  <footer>
+    <small>学祭実行委員</small>
+  </footer>
+
+</body>
+
+
+
+</html>

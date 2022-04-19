@@ -1,0 +1,98 @@
+</<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>Kofu Fes</title>
+  <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
+  <link rel="stylesheet" media="(min-width: 600px)" href="../static/css/mapsc_pc.css">
+  <link rel="stylesheet" media="(max-width: 600px)" href="../static/css/mapsc_mobile.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  <script type="text/javascript" src="../static/js/index.js"></script>
+  <script type="text/javascript" src="../static/js/map.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-180326097-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-180326097-1');
+</script>
+
+</head>
+
+<body>
+
+      <div class="menu">
+          <span class="menu__line menu__line--top"></span>
+          <span class="menu__line menu__line--center"></span>
+          <span class="menu__line menu__line--bottom"></span>
+    </div>
+      <nav class="gnav">
+          <div class="gnav__wrap">
+              <ul class="gnav__menu">
+                <li class="gnav__menu__item"><a href="{{url_for('protected_index')}}">Top</a></li>
+                <li class="gnav__menu__item"><a href="{{url_for('protected_mapjhs')}}">Kofu-Fes</a></li>
+                <li class="gnav__menu__item"><a href="{{url_for('protected_aboutus')}}">About us</a></li>
+                <li class="gnav__menu__item"><a href="{{url_for('protected_virtual')}}">Virtual</a></li>
+              </ul>
+          </div><!--gnav-wrap-->
+      </nav>
+      <div class="hero"></div>
+
+
+
+      <div class="titletop">
+      <span>Kofu-Fes</span>
+      </div>
+
+      <div class="anke">
+        <h2>オンライン興風祭のNo.１を決める投票を行っています!<br>お気に入りの団体を応援してあげてください!</h2>
+        <a href="https://forms.gle/iVhTdY4Tk8tc2BfP6" class="formcontent"><h3>投票</h3></a>
+      </div>
+
+      <div class="anke">
+          <div class="howbtn">このページの使い方</div>
+      </div>
+      <div class="guide">
+        <img src="../static/pictures/guide.jpg">
+      </div>
+
+<div class="container">
+  <div class="item cbtn1">Map 1F</div>
+  <div class="item cbtn2">Map 2F</div>
+  <div class="item cbtn3">Map 3F</div>
+</div>
+
+
+<div class= flexcontainer>
+<a href="{{url_for('protected_mapjhs')}}" class="child">Junior</a>
+<a href="{{url_for('protected_maphs')}}" class="child">High</a>
+<a href="{{url_for('protected_mapst')}}"  class="child">Stage</a>
+<a href="{{url_for('protected_mapsc')}}" class="child main">Science</a>
+</div>
+
+<div class="container2">
+  <a href="{{url_for('protected_infosc1')}}" class="item2">Info 1F</a>
+  <a href="{{url_for('protected_infosc2')}}" class="item2">Info 2F</a>
+  <a href="{{url_for('protected_infosc3')}}" class="item2">Info 3F</a>
+</div>
+
+<div class="over science1">
+  <img src="../static/pictures/science1.jpg">
+</div>
+<div class="over science2">
+  <img src="../static/pictures/science2.jpg">
+</div>
+<div class="over science3">
+  <img src="../static/pictures/science3.jpg">
+</div>
+
+</body>
+
+</style>
+
+</html>

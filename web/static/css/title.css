@@ -1,0 +1,163 @@
+@import url(https://fonts.googleapis.com/css?family=Vollkorn);
+@charset "utf-8";
+
+
+body {
+  font-family: Arial, "メイリオ", sans-serif;
+  background-color: #222222;
+  margin: 0;
+}
+
+.content {
+  margin: 0 auto;
+  padding-top: 30px;
+  margin-bottom:40px;
+}
+
+.titleneon{
+
+  text-align: center;
+  font-family: 'Vollkorn', serif;
+  font-size: 330px;
+  color:#F0F0F0;
+  text-shadow: 0 1px 30px #FF7F50;
+  transform:translate(0%,30%);
+}
+.titleneon > span {
+  -webkit-animation: blink 3s infinite alternate;
+    animation: blink 3s infinite alternate;
+
+}
+@-webkit-keyframes blink {
+  40% {
+    opacity: .85;
+  }
+  42% {
+    opacity: .4;
+  }
+  43% {
+    opacity: .85;
+  }
+  45% {
+    opacity: .4;
+  }
+  46% {
+    opacity: .85;
+  }
+}
+
+@keyframes blink {
+  40% {
+    opacity: .85;
+  }
+  42% {
+    opacity: .4;
+  }
+  43% {
+    opacity: .85;
+  }
+  45% {
+    opacity: .4;
+  }
+  46% {
+    opacity: .85;
+  }
+}
+
+
+.twicon{
+  width:5%;
+}
+.twitter{
+  position: fixed;
+  top:20px;
+  left:20px;
+}
+
+.instaicon{
+  width:7%;
+  filter:invert();
+}
+.instagram{
+  position: fixed;
+  top:20px;
+  left:65px;
+}
+
+
+/*menu*/
+.menu{
+    height: 20px;/*menubar size*/
+    width: 30px;/*menubar size*/
+    position: fixed;/*menubar position*/
+    right: 20px;/*menubar position*/
+    top: 20px;/*menubar position*/
+    z-index: 99;/*menubar 一番手前側に配置*/
+    cursor: pointer;/*カーソルを指の形に変更*/
+}
+.menu__line{
+    background: #eeeeee;/*bar color*/
+    display: block;/*https://saruwakakun.com/html-css/basic/display*/
+    height: 2px;/*bar thickness*/
+    position: absolute;/*絶対位置*/
+    width: 100%;/*棒の長さ*/
+    transition-duration: .1s;
+}
+.menu__line--center{
+    top: 9px;/*棒の位置*/
+        transition-duration: .1s;
+}
+.menu__line--bottom{
+    bottom: 0;/*下の棒の位置*/
+        transition-duration: .1s;
+}
+.menu__line--top.active{
+    top: 8px;
+    transform: rotate(45deg);/*上の棒の挙動*/
+}
+.menu__line--center.active{
+    transform:scaleX(0);/*真ん中の棒の挙動*/
+}
+.menu__line--bottom.active{
+    bottom: 10px;
+    transform: rotate(135deg);/*下の棒の挙動*/
+}
+/*gnav*/
+/*箱*/
+.gnav{
+    background: rgba(0,0,0,0.8);
+    display: none;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: 98;
+}
+.gnav__wrap{
+    align-items:center;
+    display: flex;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.gnav__menu{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 170px;
+    list-style: none;
+}
+.gnav__menu__item{
+    margin: 40px 0 40px 100px;
+    opacity: 0;
+}
+.gnav__menu__item a{
+	  color: #eeeeee;
+    font-size: 2em;
+    font-weight: bold;
+	  text-decoration: none;
+    transition:.5s;/*黒く変わるまで*/
+}
+.gnav__menu__item a:hover{
+    color: #525252
+}

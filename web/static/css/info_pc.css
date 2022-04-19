@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css?family=Vollkorn');
+@import url('https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap');
+@charset "utf-8";
+
+@media print, screen and (min-width:600px){
+body {
+  font-family: Arial, "メイリオ", sans-serif;
+  background-color: #202020;
+  margin: 0;
+}
+
+.box{
+  width:100%;
+}
+
+.contentcontainer {
+  display:inline-flex;
+  margin: 0 auto;
+  margin-left:30px;
+  text-align: left;
+  align-content: center;
+  width:85%;
+}
+.stcontentcontainer {
+  display:inline-flex;
+  margin: 0 auto;
+  margin-left:30px;
+  text-align: left;
+  align-content: center;
+  width:90%;
+  padding-top: 80px;
+  margin-bottom:30px;
+}
+
+.contentchild{
+  padding-top: 20px;
+  width:100%;
+}
+
+.picture{
+  width:100%;
+  height:auto;
+  margin-left: 80px;
+
+  margin-bottom: 50px;
+}
+
+.titleneon{
+  text-align:center;
+  font-family: 'Vollkorn', serif;
+  font-size:100px;
+  color:#FF8C00;
+  text-shadow: 0 1px 30px #FF7F50;
+  margin-bottom: 30px;
+}
+.titleneon > span {
+  -webkit-animation: blink 3s infinite alternate;
+    animation: blink 3s infinite alternate;
+}
+@-webkit-keyframes blink {
+  40% {
+    opacity: .85;
+  }
+  42% {
+    opacity: .4;
+  }
+  43% {
+    opacity: .85;
+  }
+  45% {
+    opacity: .4;
+  }
+  46% {
+    opacity: .85;
+  }
+}
+
+@keyframes blink {
+  40% {
+    opacity: .85;
+  }
+  42% {
+    opacity: .4;
+  }
+  43% {
+    opacity: .85;
+  }
+  45% {
+    opacity: .4;
+  }
+  46% {
+    opacity: .85;
+  }
+}
+
+
+
+
+h2 {
+  text-align: left;
+  border-bottom:solid 7px #fff;
+  font-size:40;
+  color: #fff;
+  padding-bottom: 13px;
+  font-style: italic;
+  font-family: 'Sawarabi Mincho', sans-serif;
+  margin: 0 auto;
+  margin-left: 20px;
+  max-width:90%;
+}
+
+.text {
+  display:block;
+  text-align:left;
+  padding-top:20px;
+  padding-left:30px;
+  padding-bottom: 25px;
+  padding-right:30px;
+  letter-spacing: 0.05em;
+  color: #fff;
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-bottom:7px;
+  font-style: oblique;
+  font-family: "Sylfaen";
+  font-size:20px;
+  width:100%;
+
+  word-wrap: break-word;
+}
+
+.clubcontent{
+  font-size:40;
+  color: #fff;
+  padding-bottom: 13px;
+  font-style: italic;
+  font-family: 'Sawarabi Mincho', sans-serif;
+  margin: 0 auto;
+  margin-left:20px;
+  text-shadow:0 1px 30px #fefefe;
+  max-width:90%;
+  margin-right:250px;
+  text-decoration: none;
+  font-weight:300;
+}
+.clubcontent h2{
+    border-bottom:none;
+}
+
+.clubinfo{
+  margin-bottom:20px;
+  padding-bottom:40px;
+  width:25%;
+  margin-right:13px;
+  margin-left: 13px;
+}
+
+iframe{
+  width:100%;
+  margin-left:80px;
+}
+
+footer {
+  min-height: 40px;
+  background-color: #424142;
+  text-align: center;
+  padding-top: 18px;
+  margin-top: 20px;
+  width: 100%;
+  bottom: 0;
+}
+
+small {
+  color: #ffffff;
+}
+
+.info{
+  font-family: 'Sawarabi Mincho', sans-serif;
+  color: #fff;
+  text-decoration: underline;
+}
+
+
+/*menu*/
+.menu{
+    height: 20px;/*menubar size*/
+    width: 30px;/*menubar size*/
+    position: fixed;/*menubar position*/
+    right: 20px;/*menubar position*/
+    top: 20px;/*menubar position*/
+    z-index: 99;/*menubar 一番手前側に配置*/
+    cursor: pointer;/*カーソルを指の形に変更*/
+}
+.menu__line{
+    background: #fff;/*bar color*/
+    display: block;/*https://saruwakakun.com/html-css/basic/display*/
+    height: 2px;/*bar thickness*/
+    position: absolute;/*絶対位置*/
+    width: 100%;/*棒の長さ*/
+    transition-duration: .1s;
+}
+.menu__line--center{
+    top: 9px;/*棒の位置*/
+        transition-duration: .1s;
+}
+.menu__line--bottom{
+    bottom: 0;/*下の棒の位置*/
+        transition-duration: .1s;
+}
+.menu__line--top.active{
+    top: 8px;
+    transform: rotate(45deg);/*上の棒の挙動*/
+}
+.menu__line--center.active{
+    transform:scaleX(0);/*真ん中の棒の挙動*/
+}
+.menu__line--bottom.active{
+    bottom: 10px;
+    transform: rotate(135deg);/*下の棒の挙動*/
+}
+/*gnav*/
+/*箱*/
+.gnav{
+    background: rgba(0,0,0,0.8);
+    display: none;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: 98;
+}
+.gnav__wrap{
+    align-items:center;
+    display: flex;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.gnav__menu{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 170px;
+    list-style: none;
+}
+.gnav__menu__item{
+    margin: 40px 0 40px 100px;
+    opacity: 0;
+}
+.gnav__menu__item a{
+	  color: #fff;
+    font-size: 2em;
+    font-weight: bold;
+	  text-decoration: none;
+    transition:.5s;/*黒く変わるまで*/
+}
+.gnav__menu__item a:hover{
+    color: #525252
+}
+}
